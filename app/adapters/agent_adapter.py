@@ -21,5 +21,7 @@ def get_agent_reply(session: dict, latest_message: str) -> str:
         session_state=agent_state,
         incoming_text=latest_message
     )
+    agent_state.turns += 1
 
     return result.get("reply", "Okay.")
+
