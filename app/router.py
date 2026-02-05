@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, Request
 from app.adapters.scam_adapter import detect_scam
 from app.adapters.agent_adapter import get_agent_reply
 from app.adapters.intelligence_adapter import process_intelligence
-from .schemas import MessageRequest, MessageResponse
-from .auth import verify_api_key
-from .session_manager import get_or_create_session, get_session, save_message_to_file
+from app.schemas import MessageRequest, MessageResponse
+from app.auth import verify_api_key
+from app.session_manager import get_or_create_session, get_session, save_message_to_file
 
 
 router = APIRouter()
@@ -64,3 +64,4 @@ async def receive_message(
 def get_intelligence(session_id: str):
     session = get_session(session_id)
     return session.get("extractedIntelligence", {})
+
