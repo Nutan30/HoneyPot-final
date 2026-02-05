@@ -1,0 +1,49 @@
+{
+  "session_id": "agent-final-test",
+  "scenario": "bank_freeze",
+  "phase": "clarification",
+  "turns": 1,
+  "conversation_history": [
+    {
+      "timestamp": 1770282869.759611,
+      "sender": "scammer",
+      "message": "Your bank account will be blocked today. Share OTP immediately."
+    },
+    {
+      "timestamp": 1770282869.769755,
+      "sender": "agent",
+      "message": "Blocked for what reason?"
+    },
+    {
+      "timestamp": 1770283030.3828335,
+      "sender": "scammer",
+      "message": "KYC is incomplete"
+    },
+    {
+      "timestamp": 1770283030.3836474,
+      "sender": "agent",
+      "message": "Flagged for what exactly?"
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [],
+    "phoneNumbers": [],
+    "phishingLinks": [],
+    "bankAccounts": [],
+    "suspiciousKeywords": {
+      "immediately": 1,
+      "blocked": 1,
+      "otp": 1
+    }
+  },
+  "extracted_info": {},
+  "persona": {
+    "language": "English",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.35,
+    "phase": "clarification"
+  },
+  "notes": "Credential harvesting attempt",
+  "timestamp": 1770283030.3847754
+}

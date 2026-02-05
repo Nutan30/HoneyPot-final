@@ -1,0 +1,73 @@
+{
+  "session_id": "guvi-dryrun-001",
+  "scenario": "bank_freeze",
+  "phase": "probing",
+  "turns": 3,
+  "conversation_history": [
+    {
+      "timestamp": 1770284139.5739408,
+      "sender": "scammer",
+      "message": "Your bank account will be blocked today. Verify immediately."
+    },
+    {
+      "timestamp": 1770284139.5819538,
+      "sender": "agent",
+      "message": "What exactly happened?"
+    },
+    {
+      "timestamp": 1770284178.8067763,
+      "sender": "scammer",
+      "message": "This is urgent. Share OTP to avoid suspension."
+    },
+    {
+      "timestamp": 1770284178.807898,
+      "sender": "agent",
+      "message": "Blocked for what reason?"
+    },
+    {
+      "timestamp": 1770284201.6342726,
+      "sender": "scammer",
+      "message": "Final warning. Send OTP now or account will be frozen."
+    },
+    {
+      "timestamp": 1770284201.6355433,
+      "sender": "agent",
+      "message": "What kind of suspicious activity?"
+    },
+    {
+      "timestamp": 1770284255.3168244,
+      "sender": "scammer",
+      "message": "Send ₹1 to this UPI ID for verification: scammer@upi"
+    },
+    {
+      "timestamp": 1770284255.317945,
+      "sender": "agent",
+      "message": "How do I resolve this issue?"
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [
+      "scammer@upi"
+    ],
+    "phoneNumbers": [],
+    "phishingLinks": [],
+    "bankAccounts": [],
+    "suspiciousKeywords": {
+      "otp": 2,
+      "immediately": 1,
+      "blocked": 1,
+      "verify": 1,
+      "urgent": 1
+    }
+  },
+  "extracted_info": {},
+  "persona": {
+    "language": "English",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.44999999999999996,
+    "phase": "clarification"
+  },
+  "notes": "Credential harvesting attempt + Payment fraud attempt",
+  "timestamp": 1770284255.3187416
+}
