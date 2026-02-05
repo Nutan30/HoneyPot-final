@@ -214,24 +214,8 @@ class AgentPlanner:
         }
         
         # 🔑 INTENT-AWARE OVERRIDES (VERY IMPORTANT)
-                # 🔑 INTENT-AWARE OVERRIDES (GUVI LOOP BREAKER)
+                
 
-        if last_intent == "urgency_threat":
-            strategy = "probe_cause" if turns == 0 else "escalate_worry"
-
-        elif last_intent == "otp_request":
-            strategy = "clarification" if turns <= 1 else "delay_payment"
-
-        elif last_intent == "upi_request":
-            strategy = "comply_partially" if turns <= 2 else "delay_payment"
-
-        elif last_intent == "send_link":
-            strategy = "probe_alternative"
-
-        if getattr(state, "last_reply_mode", None) == strategy:
-            strategy = "delay_payment"
-
-        state.last_reply_mode = strategy
 
 
 
