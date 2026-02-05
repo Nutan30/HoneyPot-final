@@ -151,6 +151,7 @@ class AgentPlanner:
     
     def generate_reply(self, strategy, state):
         last_intent = state.intent_history[-1] if state.intent_history else None
+        turns = state.turns
         """Generate human-like reply with acknowledgment, hedging, and soft probing"""
         persona = state.persona
         fear_level = persona.get("fear_level", 0.3)
@@ -213,6 +214,26 @@ class AgentPlanner:
         }
         
         # 🔑 INTENT-AWARE OVERRIDES (VERY IMPORTANT)
+                # 🔑 INTENT-AWARE OVERRIDES (GUVI LOOP BREAKER)
+
+        if last_intent == "urgency_threat":
+            strategy = "probe_cause" if turns == 0 else "escalate_worry"
+
+        elif last_intent == "otp_request":
+            strategy = "clarification" if turns <= 1 else "delay_payment"
+
+        elif last_intent == "upi_request":
+            strategy = "comply_partially" if turns <= 2 else "delay_payment"
+
+        elif last_intent == "send_link":
+            strategy = "probe_alternative"
+
+        if getattr(state, "last_reply_mode", None) == strategy:
+            strategy = "delay_payment"
+
+        state.last_reply_mode = strategy
+
+
 
 
         base_replies = soft_strategies.get(strategy, soft_strategies["feign_confusion"])
