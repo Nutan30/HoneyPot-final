@@ -150,6 +150,7 @@ class AgentPlanner:
         return False
     
     def generate_reply(self, strategy, state):
+        last_intent = state.intent_history[-1] if state.intent_history else None
         """Generate human-like reply with acknowledgment, hedging, and soft probing"""
         persona = state.persona
         fear_level = persona.get("fear_level", 0.3)
@@ -211,6 +212,23 @@ class AgentPlanner:
             ]
         }
         
+        # 🔑 INTENT-AWARE OVERRIDES (VERY IMPORTANT)
+
+        if last_intent == "otp_request":
+            return "I just received an OTP, but I’m not sure which one you’re asking for. Can you explain?"
+
+        if last_intent == "upi_request":
+            return "I’ve never shared UPI details on message before. Is this really required?"
+
+        if last_intent == "account_threat":
+            return "Why will my account be blocked so quickly? I used it today without issues."
+
+        if last_intent == "email_request":
+            return "Why do you need my email for this? Isn’t this a bank issue?"
+
+        if last_intent == "pin_request":
+            return "I thought PINs should never be shared. Are you sure?"
+
         base_replies = soft_strategies.get(strategy, soft_strategies["feign_confusion"])
         
         # Use state's memory to choose (avoids repeating recent replies)
