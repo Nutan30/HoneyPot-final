@@ -1,0 +1,17 @@
+{
+  "sessionId": "guvi-test-007",
+  "scamDetected": true,
+  "totalMessagesExchanged": 3,
+  "extractedIntelligence": {
+    "bankAccounts": [],
+    "upiIds": [
+      "scammer@upi"
+    ],
+    "phishingLinks": [],
+    "phoneNumbers": [],
+    "suspiciousKeywords": [
+      "immediately"
+    ]
+  },
+  "agentNotes": "Urgency tactics and payment redirection observed"
+}

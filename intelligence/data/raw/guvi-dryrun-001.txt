@@ -1,0 +1,4 @@
+scammer: Your bank account will be blocked today. Verify immediately.
+scammer: This is urgent. Share OTP to avoid suspension.
+scammer: Final warning. Send OTP now or account will be frozen.
+scammer: Send ₹1 to this UPI ID for verification: scammer@upi

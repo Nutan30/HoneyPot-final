@@ -1,0 +1,64 @@
+2026-01-30 00:15:31,652 - INFO - Logging system initialized
+2026-01-30 00:15:31,653 - INFO - System started successfully
+2026-01-30 00:23:59,291 - INFO - Loaded 1 conversation(s)
+2026-01-30 00:37:05,328 - INFO - Loaded 1 conversation(s)
+2026-01-30 00:47:46,352 - INFO - Loaded 1 conversation(s)
+2026-01-30 01:00:06,884 - INFO - Loaded 1 conversation(s)
+2026-01-30 14:42:06,748 - INFO - Loaded 1 conversation(s)
+2026-01-30 14:50:27,813 - INFO - Loaded 1 conversation(s)
+2026-01-30 14:59:22,802 - INFO - Loaded 2 conversation(s)
+2026-01-30 16:55:12,994 - INFO - Loaded 3 conversation(s)
+2026-01-30 18:54:08,277 - INFO - Loaded 3 conversation(s)
+2026-01-30 18:59:21,241 - INFO - Loaded 4 conversation(s)
+2026-02-03 20:05:57,180 - INFO - Processing intelligence for session guvi-test-001
+2026-02-03 20:06:24,399 - INFO - Processing intelligence for session guvi-test-001
+2026-02-03 20:06:51,025 - INFO - Processing intelligence for session guvi-test-001
+2026-02-03 20:07:10,113 - INFO - Processing intelligence for session guvi-test-001
+2026-02-03 20:07:22,887 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:42:03,018 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:42:23,011 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:42:40,781 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:42:56,947 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:51:45,984 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:52:08,610 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:52:27,973 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:52:57,701 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:53:14,105 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:54:01,761 - INFO - Processing intelligence for session guvi-test-002
+2026-02-04 18:54:19,353 - INFO - Processing intelligence for session guvi-test-002
+2026-02-04 18:56:16,739 - INFO - Processing intelligence for session guvi-test-001
+2026-02-04 18:56:24,694 - INFO - Processing intelligence for session guvi-test-002
+2026-02-04 18:56:44,603 - INFO - Processing intelligence for session guvi-test-002
+2026-02-04 18:57:01,634 - INFO - Processing intelligence for session guvi-test-002
+2026-02-04 19:00:40,018 - INFO - Processing intelligence for session guvi-test-003
+2026-02-04 19:00:59,067 - INFO - Processing intelligence for session guvi-test-003
+2026-02-04 19:01:18,286 - INFO - Processing intelligence for session guvi-test-003
+2026-02-04 19:01:50,660 - INFO - Processing intelligence for session guvi-test-003
+2026-02-04 19:02:12,075 - INFO - Processing intelligence for session guvi-test-003
+2026-02-04 19:06:04,691 - INFO - Processing intelligence for session guvi-test-004
+2026-02-04 19:06:25,821 - INFO - Processing intelligence for session guvi-test-004
+2026-02-04 19:06:45,124 - INFO - Processing intelligence for session guvi-test-004
+2026-02-04 19:07:09,610 - INFO - Processing intelligence for session guvi-test-004
+2026-02-04 19:17:50,785 - INFO - Processing intelligence for session guvi-test-005
+2026-02-04 19:21:58,423 - INFO - Processing intelligence for session guvi-test-006
+2026-02-04 19:22:34,714 - INFO - Processing intelligence for session guvi-test-006
+2026-02-04 19:29:01,031 - INFO - Processing intelligence for session guvi-test-007
+2026-02-04 19:29:01,042 - INFO - Saved intelligence for session guvi-test-007
+2026-02-04 19:30:48,770 - INFO - Processing intelligence for session guvi-test-007
+2026-02-04 19:30:48,776 - INFO - Saved intelligence for session guvi-test-007
+2026-02-05 14:44:29,777 - INFO - Processing intelligence for session agent-final-test
+2026-02-05 14:44:29,781 - INFO - Saved intelligence for session agent-final-test
+2026-02-05 14:47:10,388 - INFO - Processing intelligence for session agent-final-test
+2026-02-05 14:47:10,392 - INFO - Saved intelligence for session agent-final-test
+2026-02-05 15:05:39,586 - INFO - Processing intelligence for session guvi-dryrun-001
+2026-02-05 15:05:39,589 - INFO - Saved intelligence for session guvi-dryrun-001
+2026-02-05 15:06:18,814 - INFO - Processing intelligence for session guvi-dryrun-001
+2026-02-05 15:06:18,817 - INFO - Saved intelligence for session guvi-dryrun-001
+2026-02-05 15:06:41,639 - INFO - Processing intelligence for session guvi-dryrun-001
+2026-02-05 15:06:41,643 - INFO - Saved intelligence for session guvi-dryrun-001
+2026-02-05 15:07:35,320 - INFO - Processing intelligence for session guvi-dryrun-001
+2026-02-05 15:07:35,323 - INFO - Saved intelligence for session guvi-dryrun-001
+2026-02-05 16:22:43,004 - INFO - Processing intelligence for session guvi-dryrun-002
+2026-02-05 16:22:43,012 - INFO - Saved intelligence for session guvi-dryrun-002
+2026-02-05 17:09:13,643 - INFO - Processing intelligence for session guvi-dryrun-005
+2026-02-05 17:09:13,647 - INFO - Saved intelligence for session guvi-dryrun-005

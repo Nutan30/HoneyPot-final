@@ -1,0 +1,6 @@
+Scammer: Your bank account will be blocked
+Scammer: Send OTP immediately to avoid suspension
+Scammer: My UPI ID is fraudster@upi
+Victim: Why are you asking OTP?
+Scammer: This is RBI verification
+

@@ -1,0 +1,16 @@
+{
+    "sessionId": "conversation_otp_fakebank-session-id",
+    "scamDetected": true,
+    "totalMessagesExchanged": 5,
+    "extractedIntelligence": {
+        "bankAccounts": [],
+        "upiIds": [],
+        "phishingLinks": [],
+        "phoneNumbers": [],
+        "suspiciousKeywords": [
+            "urgent",
+            "immediately"
+        ]
+    },
+    "agentNotes": "Scammer used urgency tactics and payment redirection"
+}
