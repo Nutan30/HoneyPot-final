@@ -1,0 +1,110 @@
+{
+  "session_id": "test_flow",
+  "scenario": "bank_freeze",
+  "phase": "probing",
+  "turns": 7,
+  "conversation_history": [
+    {
+      "timestamp": 1770209537.928954,
+      "sender": "scammer",
+      "message": "hi"
+    },
+    {
+      "timestamp": 1770209537.9373558,
+      "sender": "agent",
+      "message": "Sorry, who is calling?"
+    },
+    {
+      "timestamp": 1770209537.9455948,
+      "sender": "scammer",
+      "message": "Rahul from Axis bank"
+    },
+    {
+      "timestamp": 1770209537.9461074,
+      "sender": "agent",
+      "message": "Right... what's the problem?"
+    },
+    {
+      "timestamp": 1770209537.948157,
+      "sender": "scammer",
+      "message": "I am from axis bank"
+    },
+    {
+      "timestamp": 1770209537.9485116,
+      "sender": "agent",
+      "message": "Alright... what's wrong with my account?"
+    },
+    {
+      "timestamp": 1770209537.9503644,
+      "sender": "scammer",
+      "message": "your account is flagged"
+    },
+    {
+      "timestamp": 1770209537.9510376,
+      "sender": "agent",
+      "message": "I didn't understand completely."
+    },
+    {
+      "timestamp": 1770209537.9534574,
+      "sender": "scammer",
+      "message": "suspicious activity"
+    },
+    {
+      "timestamp": 1770209537.9538355,
+      "sender": "agent",
+      "message": "What do you mean exactly?"
+    },
+    {
+      "timestamp": 1770209537.955843,
+      "sender": "scammer",
+      "message": "verify details"
+    },
+    {
+      "timestamp": 1770209537.9564388,
+      "sender": "agent",
+      "message": "Can you explain that again?"
+    },
+    {
+      "timestamp": 1770209537.9587436,
+      "sender": "scammer",
+      "message": "send on this link http://fake-site.in"
+    },
+    {
+      "timestamp": 1770209537.9592466,
+      "sender": "agent",
+      "message": "How do I resolve this issue?"
+    },
+    {
+      "timestamp": 1770209537.9614956,
+      "sender": "scammer",
+      "message": "UPI"
+    },
+    {
+      "timestamp": 1770209537.9620514,
+      "sender": "agent",
+      "message": "What's the process to fix this?"
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [],
+    "phoneNumbers": [],
+    "phishingLinks": [
+      "http://fake-site.in"
+    ],
+    "bankAccounts": [],
+    "suspiciousKeywords": {
+      "verify": 1,
+      "link": 1
+    }
+  },
+  "extracted_info": {},
+  "persona": {
+    "language": "English",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.6,
+    "phase": "probing"
+  },
+  "notes": "Phishing links detected",
+  "timestamp": 1770209537.9626317
+}

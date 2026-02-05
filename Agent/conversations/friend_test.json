@@ -1,0 +1,65 @@
+{
+  "session_id": "friend_test",
+  "scenario": null,
+  "phase": "hook",
+  "turns": 3,
+  "conversation_history": [
+    {
+      "timestamp": 1770209881.5873015,
+      "sender": "scammer",
+      "message": "i want 10000 urgently"
+    },
+    {
+      "timestamp": 1770209881.592126,
+      "sender": "agent",
+      "message": "Hello, who am I talking to?"
+    },
+    {
+      "timestamp": 1770209881.6004183,
+      "sender": "scammer",
+      "message": "rahul your college friend"
+    },
+    {
+      "timestamp": 1770209881.6008315,
+      "sender": "agent",
+      "message": "Right... what's the problem?"
+    },
+    {
+      "timestamp": 1770209881.6037319,
+      "sender": "scammer",
+      "message": "rahul"
+    },
+    {
+      "timestamp": 1770209881.6042788,
+      "sender": "agent",
+      "message": "What do you mean exactly?"
+    },
+    {
+      "timestamp": 1770209881.6072638,
+      "sender": "scammer",
+      "message": "we were in same college"
+    },
+    {
+      "timestamp": 1770209881.607648,
+      "sender": "agent",
+      "message": "Okay... what's this about?"
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [],
+    "phoneNumbers": [],
+    "phishingLinks": [],
+    "bankAccounts": [],
+    "suspiciousKeywords": {}
+  },
+  "extracted_info": {},
+  "persona": {
+    "language": "English",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.3,
+    "phase": "hook"
+  },
+  "notes": "Social engineering attempt",
+  "timestamp": 1770209881.608051
+}
