@@ -13,6 +13,8 @@ class ConversationState:
         self.extracted_info = {}
         self.last_question_type = None  # Track repetition
         self.curiosity_level = 0        # Gradual escalation
+        self.last_reply_mode = None
+
         # Will be set by API
         self.scenario = None
         self.intelligence = None
@@ -69,3 +71,4 @@ class ConversationState:
             return True
             
         return False
+
