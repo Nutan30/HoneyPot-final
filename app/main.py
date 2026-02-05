@@ -1,5 +1,10 @@
 from fastapi import FastAPI
-from .router import router
+from app.router import router
 
-app = FastAPI(title="Agentic HoneyPot API")
+app = FastAPI()
+
+@app.get("/")
+def health():
+    return {"status": "alive"}
+
 app.include_router(router)
