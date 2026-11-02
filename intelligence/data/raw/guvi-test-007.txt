@@ -1,0 +1,3 @@
+scammer: You must verify immediately to avoid permanent suspension.
+scammer: Your bank account will be blocked today due to suspicious activity.
+scammer: Send ₹1 to verify your account using this UPI ID: scammer@upi

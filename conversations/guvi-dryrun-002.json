@@ -1,0 +1,38 @@
+{
+  "session_id": "guvi-dryrun-002",
+  "scenario": null,
+  "phase": "clarification",
+  "turns": 0,
+  "conversation_history": [
+    {
+      "timestamp": 1770288762.9773026,
+      "sender": "scammer",
+      "message": "Share OTP immediately"
+    },
+    {
+      "timestamp": 1770288762.9957836,
+      "sender": "agent",
+      "message": "What do you mean exactly?"
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [],
+    "phoneNumbers": [],
+    "phishingLinks": [],
+    "bankAccounts": [],
+    "suspiciousKeywords": {
+      "immediately": 1,
+      "otp": 1
+    }
+  },
+  "extracted_info": {},
+  "persona": {
+    "language": "English",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.3,
+    "phase": "hook"
+  },
+  "notes": "Credential harvesting attempt",
+  "timestamp": 1770288762.9972992
+}

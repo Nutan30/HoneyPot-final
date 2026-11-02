@@ -1,0 +1,11 @@
+scammer: Share the OTP sent to your registered mobile number.
+scammer: Your bank account will be blocked today due to suspicious activity.
+scammer: You must verify immediately to avoid permanent suspension.
+scammer: Share the OTP sent to your registered mobile number.
+scammer: Send ₹1 to verify your account using this UPI ID: scammer@upi
+scammer: Your bank account will be blocked today due to suspicious activity.
+scammer: You must verify immediately to avoid permanent suspension.
+scammer: Share the OTP sent to your registered mobile number.
+scammer: Send ₹1 to verify your account using this UPI ID: scammer@upi
+scammer: Call our customer support immediately at +919876543210.
+scammer: You must verify immediately to avoid permanent suspension.

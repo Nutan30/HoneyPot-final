@@ -1,0 +1,27 @@
+{
+  "sessionId": "test_agentic_e2e_session",
+  "scamDetected": true,
+  "totalMessagesExchanged": 5,
+  "extractedIntelligence": {
+    "bankAccounts": [],
+    "upiIds": [],
+    "phishingLinks": [],
+    "phoneNumbers": [
+      "9876543210"
+    ],
+    "suspiciousKeywords": [
+      "immediately"
+    ]
+  },
+  "agentNotes": "Urgency tactics detected | Scam type: ELECTRICITY_BILL_SCAM | Phone numbers captured: 1 | Suspicious keywords: immediately",
+  "scamClassification": "ELECTRICITY_BILL_SCAM",
+  "aiInsights": {
+    "scam_type": "ELECTRICITY_BILL_SCAM",
+    "intent": [],
+    "tactics": [
+      "urgency"
+    ],
+    "confidence": 0.6,
+    "threat_actor_persona": "Unknown"
+  }
+}

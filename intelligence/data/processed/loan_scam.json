@@ -1,0 +1,15 @@
+{
+    "sessionId": "loan_scam-session-id",
+    "scamDetected": true,
+    "totalMessagesExchanged": 4,
+    "extractedIntelligence": {
+        "bankAccounts": [],
+        "upiIds": [
+            "fastloan@upi"
+        ],
+        "phishingLinks": [],
+        "phoneNumbers": [],
+        "suspiciousKeywords": []
+    },
+    "agentNotes": "Scammer used urgency tactics and payment redirection"
+}

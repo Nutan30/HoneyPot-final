@@ -1,0 +1,7 @@
+[
+  { "text": "Your account will be blocked today", "label": "scam" },
+  { "text": "OTP for login is 654321", "label": "not_scam" },
+  { "text": "Update KYC via link immediately", "label": "scam" },
+  { "text": "Bank holiday tomorrow", "label": "not_scam" },
+  { "text": "Share your UPI ID to avoid suspension", "label": "scam" }
+]

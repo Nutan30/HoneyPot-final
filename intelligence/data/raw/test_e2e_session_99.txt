@@ -1,0 +1,10 @@
+scammer: URGENT: Your SBI account is blocked. Send ₹500 immediately to verify@oksbi
+agent: Okay, noted.
+scammer: URGENT: Your account will be blocked. Verify immediately or payment service will stop today. Send OTP to verify@oksbi
+agent: Blocked for what reason?
+scammer: URGENT: Your account will be blocked. Verify immediately or payment service will stop today. Send OTP to verify@oksbi
+agent: What kind of suspicious activity?
+scammer: URGENT: Your account will be blocked. Verify immediately or payment service will stop today. Send OTP to verify@oksbi
+agent: Blocked for what reason?
+scammer: URGENT: Your account will be blocked. Verify immediately or payment service will stop today. Send OTP to verify@oksbi
+agent: Flagged for what exactly?

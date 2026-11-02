@@ -1,0 +1,15 @@
+{
+  "sessionId": "agent-final-test",
+  "scamDetected": true,
+  "totalMessagesExchanged": 2,
+  "extractedIntelligence": {
+    "bankAccounts": [],
+    "upiIds": [],
+    "phishingLinks": [],
+    "phoneNumbers": [],
+    "suspiciousKeywords": [
+      "immediately"
+    ]
+  },
+  "agentNotes": "Urgency tactics and payment redirection observed"
+}

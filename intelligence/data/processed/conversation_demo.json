@@ -1,0 +1,18 @@
+{
+    "sessionId": "conversation_demo-session-id",
+    "scamDetected": true,
+    "totalMessagesExchanged": 6,
+    "extractedIntelligence": {
+        "bankAccounts": [],
+        "upiIds": [
+            "upihelp@upi"
+        ],
+        "phishingLinks": [],
+        "phoneNumbers": [],
+        "suspiciousKeywords": [
+            "urgent",
+            "immediately"
+        ]
+    },
+    "agentNotes": "Scammer used urgency tactics and payment redirection"
+}

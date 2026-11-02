@@ -1,0 +1,41 @@
+{
+  "session_id": "guvi-dryrun-005",
+  "scenario": "bank_freeze",
+  "phase": "clarification",
+  "turns": 0,
+  "conversation_history": [
+    {
+      "timestamp": 1770291553.6166306,
+      "sender": "scammer",
+      "message": "Click here immediately: http://fake-bank-login.com and share otp"
+    },
+    {
+      "timestamp": 1770291553.635765,
+      "sender": "agent",
+      "message": "I didn't understand completely."
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [],
+    "phoneNumbers": [],
+    "phishingLinks": [
+      "http://fake-bank-login.com"
+    ],
+    "bankAccounts": [],
+    "suspiciousKeywords": {
+      "immediately": 1,
+      "otp": 1,
+      "click": 1
+    }
+  },
+  "extracted_info": {},
+  "persona": {
+    "language": "English",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.3,
+    "phase": "hook"
+  },
+  "notes": "Credential harvesting attempt + Phishing links detected",
+  "timestamp": 1770291553.636866
+}

@@ -1,0 +1,17 @@
+{
+  "sessionId": "guvi-dryrun-005",
+  "scamDetected": true,
+  "totalMessagesExchanged": 2,
+  "extractedIntelligence": {
+    "bankAccounts": [],
+    "upiIds": [],
+    "phishingLinks": [
+      "http://fake-bank-login.com"
+    ],
+    "phoneNumbers": [],
+    "suspiciousKeywords": [
+      "immediately"
+    ]
+  },
+  "agentNotes": "Urgency tactics and payment redirection observed"
+}

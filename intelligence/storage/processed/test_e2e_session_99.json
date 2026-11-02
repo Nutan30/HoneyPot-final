@@ -1,0 +1,33 @@
+{
+  "sessionId": "test_e2e_session_99",
+  "scamDetected": true,
+  "totalMessagesExchanged": 9,
+  "extractedIntelligence": {
+    "bankAccounts": [],
+    "upiIds": [
+      "verify@oksbi"
+    ],
+    "phishingLinks": [],
+    "phoneNumbers": [],
+    "suspiciousKeywords": [
+      "urgent",
+      "immediately"
+    ]
+  },
+  "agentNotes": "Urgency tactics detected | Fear-based pressure observed | Authority impersonation attempted | Scam type: OTP_SCAM | UPI IDs extracted: 1 | Suspicious keywords: urgent, immediately",
+  "scamClassification": "OTP_SCAM",
+  "aiInsights": {
+    "scam_type": "OTP_SCAM",
+    "intent": [
+      "steal_otp",
+      "account_takeover"
+    ],
+    "tactics": [
+      "fear",
+      "authority_impersonation",
+      "urgency"
+    ],
+    "confidence": 0.6,
+    "threat_actor_persona": "Alleged Authority / Official"
+  }
+}
