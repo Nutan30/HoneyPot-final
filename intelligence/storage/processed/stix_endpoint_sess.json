@@ -1,0 +1,30 @@
+{
+  "sessionId": "stix_endpoint_sess",
+  "scamDetected": false,
+  "totalMessagesExchanged": 3,
+  "extractedIntelligence": {
+    "bankAccounts": [],
+    "upiIds": [
+      "fraud@okaxis"
+    ],
+    "phishingLinks": [],
+    "phoneNumbers": [],
+    "ifscCodes": [],
+    "cryptoAddresses": [],
+    "enrichedLinks": [],
+    "suspiciousKeywords": [
+      "immediately"
+    ]
+  },
+  "agentNotes": "Urgency tactics detected | UPI IDs extracted: 1 | Suspicious keywords: immediately",
+  "scamClassification": "UNKNOWN",
+  "aiInsights": {
+    "scam_type": "UNKNOWN",
+    "intent": [],
+    "tactics": [
+      "urgency"
+    ],
+    "confidence": 0.2,
+    "threat_actor_persona": "Unknown"
+  }
+}

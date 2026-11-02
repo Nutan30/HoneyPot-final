@@ -103,3 +103,34 @@ class ExtractedIOCModel(Base):
             "value": self.value,
             "createdAt": self.created_at.isoformat() if self.created_at else None,
         }
+
+
+class CanaryTokenModel(Base):
+    __tablename__ = "canary_tokens"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    token_id = Column(String(64), unique=True, index=True, nullable=False)
+    session_id = Column(String(64), nullable=True, index=True)
+    token_type = Column(String(32), nullable=False, index=True)  # "card", "upi", "url"
+    decoy_value = Column(String(256), nullable=False)
+    tripped = Column(Boolean, default=False, index=True)
+    tripped_at = Column(DateTime, nullable=True)
+    client_ip = Column(String(64), nullable=True)
+    user_agent = Column(String(512), nullable=True)
+    extra_data = Column(JSON, nullable=True)
+    created_at = Column(DateTime, default=func.now())
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "tokenId": self.token_id,
+            "sessionId": self.session_id,
+            "tokenType": self.token_type,
+            "decoyValue": self.decoy_value,
+            "tripped": bool(self.tripped),
+            "trippedAt": self.tripped_at.isoformat() if self.tripped_at else None,
+            "clientIp": self.client_ip,
+            "userAgent": self.user_agent,
+            "extraData": self.extra_data or {},
+            "createdAt": self.created_at.isoformat() if self.created_at else None,
+        }

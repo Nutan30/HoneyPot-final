@@ -195,6 +195,8 @@ class SessionRepository:
             "phoneNumbers": "phone",
             "phishingLinks": "link",
             "bankAccounts": "bank_account",
+            "ifscCodes": "ifsc",
+            "cryptoAddresses": "crypto",
             "suspiciousKeywords": "keyword"
         }
 
@@ -207,7 +209,11 @@ class SessionRepository:
             items = intel.get(intel_key, [])
             if isinstance(items, list):
                 for item in items:
-                    val = str(item).strip()
+                    if isinstance(item, dict):
+                        val = item.get("address", "") or str(item)
+                    else:
+                        val = str(item).strip()
+
                     if val and (ioc_type, val) not in existing_values:
                         db.add(ExtractedIOCModel(
                             session_id=session_id,
@@ -215,6 +221,23 @@ class SessionRepository:
                             value=val
                         ))
                         existing_values.add((ioc_type, val))
+
+    @staticmethod
+    def list_iocs(
+        ioc_type: Optional[str] = None,
+        session_id: Optional[str] = None,
+        limit: int = 50,
+        offset: int = 0
+    ) -> List[Dict[str, Any]]:
+        """Query extracted IOCs across sessions with filtering by type and session."""
+        with SessionLocal() as db:
+            query = db.query(ExtractedIOCModel)
+            if ioc_type:
+                query = query.filter(ExtractedIOCModel.ioc_type == ioc_type)
+            if session_id:
+                query = query.filter(ExtractedIOCModel.session_id == session_id)
+            records = query.order_by(ExtractedIOCModel.created_at.desc()).offset(offset).limit(limit).all()
+            return [r.to_dict() for r in records]
 
     @staticmethod
     def set_callback_sent(session_id: str, status: bool = True) -> None:
@@ -244,6 +267,8 @@ class SessionRepository:
             unique_upis = db.query(ExtractedIOCModel).filter(ExtractedIOCModel.ioc_type == "upi").distinct().count()
             unique_links = db.query(ExtractedIOCModel).filter(ExtractedIOCModel.ioc_type == "link").distinct().count()
             unique_phones = db.query(ExtractedIOCModel).filter(ExtractedIOCModel.ioc_type == "phone").distinct().count()
+            unique_accounts = db.query(ExtractedIOCModel).filter(ExtractedIOCModel.ioc_type == "bank_account").distinct().count()
+            unique_crypto = db.query(ExtractedIOCModel).filter(ExtractedIOCModel.ioc_type == "crypto").distinct().count()
 
             return {
                 "totalSessions": total_sessions,
@@ -252,5 +277,7 @@ class SessionRepository:
                 "totalIOCs": total_iocs,
                 "uniqueUPIs": unique_upis,
                 "uniquePhishingLinks": unique_links,
-                "uniquePhoneNumbers": unique_phones
+                "uniquePhoneNumbers": unique_phones,
+                "uniqueBankAccounts": unique_accounts,
+                "uniqueCryptoWallets": unique_crypto
             }

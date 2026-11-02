@@ -1,7 +1,7 @@
 {
   "sessionId": "test_e2e_session_99",
   "scamDetected": true,
-  "totalMessagesExchanged": 9,
+  "totalMessagesExchanged": 23,
   "extractedIntelligence": {
     "bankAccounts": [],
     "upiIds": [
@@ -9,6 +9,9 @@
     ],
     "phishingLinks": [],
     "phoneNumbers": [],
+    "ifscCodes": [],
+    "cryptoAddresses": [],
+    "enrichedLinks": [],
     "suspiciousKeywords": [
       "urgent",
       "immediately"
@@ -23,9 +26,9 @@
       "account_takeover"
     ],
     "tactics": [
-      "fear",
+      "urgency",
       "authority_impersonation",
-      "urgency"
+      "fear"
     ],
     "confidence": 0.6,
     "threat_actor_persona": "Alleged Authority / Official"

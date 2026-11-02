@@ -4,3 +4,5 @@ scammer: Your electricity connection will be disconnected today at 9:30 PM due t
 agent: Okay, noted.
 scammer: Your electricity connection will be disconnected today at 9:30 PM due to unpaid bill. Call 9876543210 immediately.
 agent: Okay, noted.
+scammer: Your electricity connection will be disconnected today at 9:30 PM due to unpaid bill. Call 9876543210 immediately.
+agent: Okay, noted.

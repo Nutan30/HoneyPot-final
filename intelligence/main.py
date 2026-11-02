@@ -5,11 +5,18 @@ import logging
 from intelligence.extraction.regex_extractor import (
     extract_phone_numbers,
     extract_upi_ids,
-    extract_phishing_links
+    extract_phishing_links,
+    extract_ifsc_codes,
+    extract_bank_accounts,
+    extract_crypto_addresses
 )
 from intelligence.validation.validators import (
     validate_phone_numbers,
-    validate_upi_ids
+    validate_upi_ids,
+    validate_ifsc_codes,
+    validate_bank_accounts,
+    validate_crypto_addresses,
+    enrich_phishing_links
 )
 from intelligence.storage.json_storage import save_to_json
 from intelligence.extraction.llm_extractor import ai_extract_insights
@@ -41,7 +48,7 @@ def setup_logging():
     )
 
 
-def _generate_agent_notes(ai_insights, suspicious_keywords, links, upis, phones):
+def _generate_agent_notes(ai_insights, suspicious_keywords, links, upis, phones, accounts=None, ifscs=None, crypto=None):
     """Generate dynamic agent notes based on actual extraction results."""
     notes = []
 
@@ -63,6 +70,12 @@ def _generate_agent_notes(ai_insights, suspicious_keywords, links, upis, phones)
         notes.append(f"UPI IDs extracted: {len(upis)}")
     if phones:
         notes.append(f"Phone numbers captured: {len(phones)}")
+    if accounts:
+        notes.append(f"Bank accounts captured: {len(accounts)}")
+    if ifscs:
+        notes.append(f"IFSC codes found: {len(ifscs)}")
+    if crypto:
+        notes.append(f"Crypto wallets identified: {len(crypto)}")
     if suspicious_keywords:
         notes.append(f"Suspicious keywords: {', '.join(suspicious_keywords[:5])}")
 
@@ -99,18 +112,31 @@ def run_intelligence(session: dict):
     # ---- Extraction ---- #
     raw_phones = extract_phone_numbers(texts)
     raw_upis = extract_upi_ids(texts)
-    links = extract_phishing_links(texts)
+    raw_links = extract_phishing_links(texts)
+    raw_ifscs = extract_ifsc_codes(texts)
+    raw_accounts = extract_bank_accounts(texts)
+    raw_crypto = extract_crypto_addresses(texts)
     suspicious_keywords = extract_suspicious_keywords(texts)
+
+    # ---- Validation & Enrichment ---- #
     phones = validate_phone_numbers(raw_phones)
     upis = validate_upi_ids(raw_upis)
+    ifscs = validate_ifsc_codes(raw_ifscs)
+    bank_accounts = validate_bank_accounts(raw_accounts)
+    crypto = validate_crypto_addresses(raw_crypto)
+    enriched_links = enrich_phishing_links(raw_links)
+
     ai_insights = ai_extract_insights(texts)
     scam_label = classify_scam(texts, ai_insights)
 
-    # FIX: "UNKNOWN" is truthy in Python — explicitly check for real scam labels
+    # Explicitly check for real scam labels
     scam_detected = bool(scam_label and scam_label != "UNKNOWN")
 
-    # Generate dynamic notes from actual analysis (not hardcoded strings)
-    agent_notes = _generate_agent_notes(ai_insights, suspicious_keywords, links, upis, phones)
+    # Generate dynamic notes from actual analysis
+    agent_notes = _generate_agent_notes(
+        ai_insights, suspicious_keywords, raw_links, upis, phones,
+        accounts=bank_accounts, ifscs=ifscs, crypto=crypto
+    )
 
     # ---- Final Intelligence Object ---- #
     intelligence_payload = {
@@ -118,10 +144,13 @@ def run_intelligence(session: dict):
         "scamDetected": scam_detected,
         "totalMessagesExchanged": len(messages),
         "extractedIntelligence": {
-            "bankAccounts": [],
+            "bankAccounts": bank_accounts,
             "upiIds": upis,
-            "phishingLinks": links,
+            "phishingLinks": raw_links,
             "phoneNumbers": phones,
+            "ifscCodes": ifscs,
+            "cryptoAddresses": crypto,
+            "enrichedLinks": enriched_links,
             "suspiciousKeywords": suspicious_keywords
         },
         "agentNotes": agent_notes,

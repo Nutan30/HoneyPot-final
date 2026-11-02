@@ -8,3 +8,5 @@ scammer: URGENT: Your account will be blocked. Verify immediately or payment ser
 agent: Blocked for what reason?
 scammer: URGENT: Your account will be blocked. Verify immediately or payment service will stop today. Send OTP to verify@oksbi
 agent: Flagged for what exactly?
+scammer: URGENT: Your account will be blocked. Verify immediately or payment service will stop today. Send OTP to verify@oksbi
+agent: Flagged for what exactly?

@@ -1,7 +1,7 @@
 {
   "sessionId": "test_agentic_e2e_session",
   "scamDetected": true,
-  "totalMessagesExchanged": 5,
+  "totalMessagesExchanged": 19,
   "extractedIntelligence": {
     "bankAccounts": [],
     "upiIds": [],
@@ -9,6 +9,9 @@
     "phoneNumbers": [
       "9876543210"
     ],
+    "ifscCodes": [],
+    "cryptoAddresses": [],
+    "enrichedLinks": [],
     "suspiciousKeywords": [
       "immediately"
     ]
