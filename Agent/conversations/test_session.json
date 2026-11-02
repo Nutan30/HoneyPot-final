@@ -1,0 +1,55 @@
+{
+  "session_id": "test_session",
+  "scenario": null,
+  "phase": "hook",
+  "turns": 2,
+  "conversation_history": [
+    {
+      "timestamp": 1770209785.9314787,
+      "sender": "scammer",
+      "message": "i want 10000 immideately"
+    },
+    {
+      "timestamp": 1770209785.9349697,
+      "sender": "agent",
+      "message": "Sorry, who is calling?"
+    },
+    {
+      "timestamp": 1770209832.0690136,
+      "sender": "scammer",
+      "message": "rahul"
+    },
+    {
+      "timestamp": 1770209832.069948,
+      "sender": "agent",
+      "message": "Hello, who am I talking to?"
+    },
+    {
+      "timestamp": 1770209843.8210926,
+      "sender": "scammer",
+      "message": "i am your friend from college"
+    },
+    {
+      "timestamp": 1770209843.821783,
+      "sender": "agent",
+      "message": "Alright... what's wrong with my account?"
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [],
+    "phoneNumbers": [],
+    "phishingLinks": [],
+    "bankAccounts": [],
+    "suspiciousKeywords": {}
+  },
+  "extracted_info": {},
+  "persona": {
+    "language": "English",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.3,
+    "phase": "hook"
+  },
+  "notes": "Social engineering attempt",
+  "timestamp": 1770209843.822657
+}

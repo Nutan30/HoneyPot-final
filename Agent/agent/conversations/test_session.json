@@ -1,0 +1,66 @@
+[
+  {
+    "sender": "scammer",
+    "message": "you have been awarded 1000 rupees"
+  },
+  {
+    "sender": "agent",
+    "message": "Who is this?"
+  },
+  {
+    "sender": "scammer",
+    "message": "bank"
+  },
+  {
+    "sender": "agent",
+    "message": "Who are you calling?"
+  },
+  {
+    "sender": "scammer",
+    "message": "suyash"
+  },
+  {
+    "sender": "agent",
+    "message": "How did you get my number?"
+  },
+  {
+    "sender": "scammer",
+    "message": "we have in records"
+  },
+  {
+    "sender": "agent",
+    "message": "Which bank are you from?"
+  },
+  {
+    "sender": "scammer",
+    "message": "Axis"
+  },
+  {
+    "sender": "agent",
+    "message": "Send me official email first.\nCan I call back?"
+  },
+  {
+    "sender": "scammer",
+    "message": "Give me OTP which i send on your device"
+  },
+  {
+    "sender": "agent",
+    "message": "Can you send verification link?"
+  },
+  {
+    "sender": "scammer",
+    "message": "no"
+  },
+  {
+    "sender": "agent",
+    "message": "Network issue here.\nHmm..."
+  },
+  {
+    "sender": "scammer",
+    "message": "just OTP"
+  },
+  {
+    "sender": "agent",
+    "message": "App is hanging.\nAre you sure?"
+  }
+]

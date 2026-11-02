@@ -1,0 +1,53 @@
+{
+  "session_id": "test_e2e_session_99",
+  "scenario": "bank_freeze",
+  "phase": "clarification",
+  "turns": 0,
+  "conversation_history": [
+    {
+      "timestamp": 1792699780.3011734,
+      "sender": "scammer",
+      "message": "URGENT: Your account will be blocked. Verify immediately or payment service will stop today. Send OTP to verify@oksbi"
+    },
+    {
+      "timestamp": 1792699780.308463,
+      "sender": "agent",
+      "message": "Flagged for what exactly?",
+      "thought": "OpenAI API key not configured or offline. Running deterministic planner strategy: probe_cause.",
+      "target_ioc": "none"
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [
+      "verify@oksbi"
+    ],
+    "phoneNumbers": [],
+    "phishingLinks": [],
+    "bankAccounts": [],
+    "suspiciousKeywords": {
+      "urgent": 1,
+      "immediately": 1,
+      "blocked": 1,
+      "otp": 1,
+      "verify": 1
+    }
+  },
+  "extracted_info": {},
+  "persona": {
+    "name": "Ramesh Kumar",
+    "age": 58,
+    "language": "English / Hinglish",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.35,
+    "phase": "clarification",
+    "last_thought": "OpenAI API key not configured or offline. Running deterministic planner strategy: probe_cause.",
+    "target_ioc": "none",
+    "engine": "heuristic_fallback"
+  },
+  "last_thought": "OpenAI API key not configured or offline. Running deterministic planner strategy: probe_cause.",
+  "target_ioc": "none",
+  "engine": "heuristic_fallback",
+  "notes": "Credential harvesting attempt + Payment fraud attempt",
+  "timestamp": 1792699780.3090851
+}

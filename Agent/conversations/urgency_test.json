@@ -1,0 +1,97 @@
+{
+  "session_id": "urgency_test",
+  "scenario": "bank_freeze",
+  "phase": "clarification",
+  "turns": 6,
+  "conversation_history": [
+    {
+      "timestamp": 1770209560.59372,
+      "sender": "scammer",
+      "message": "hi"
+    },
+    {
+      "timestamp": 1770209560.597935,
+      "sender": "agent",
+      "message": "Sorry, who is calling?"
+    },
+    {
+      "timestamp": 1770209560.6038694,
+      "sender": "scammer",
+      "message": "aayush from axis bank"
+    },
+    {
+      "timestamp": 1770209560.6047404,
+      "sender": "agent",
+      "message": "I see... what happened?"
+    },
+    {
+      "timestamp": 1770209560.60709,
+      "sender": "scammer",
+      "message": "your account will be freeze in 30 minutes"
+    },
+    {
+      "timestamp": 1770209560.6078205,
+      "sender": "agent",
+      "message": "What do you mean exactly?"
+    },
+    {
+      "timestamp": 1770209560.610399,
+      "sender": "scammer",
+      "message": "we found your account suspious"
+    },
+    {
+      "timestamp": 1770209560.610957,
+      "sender": "agent",
+      "message": "Can you explain that again?"
+    },
+    {
+      "timestamp": 1770209560.612589,
+      "sender": "scammer",
+      "message": "we found a illigel activity from your account"
+    },
+    {
+      "timestamp": 1770209560.6130142,
+      "sender": "agent",
+      "message": "Oh... that sounds serious. What do I need to do?"
+    },
+    {
+      "timestamp": 1770209560.6144319,
+      "sender": "scammer",
+      "message": "we found scam activity from your account"
+    },
+    {
+      "timestamp": 1770209560.6150475,
+      "sender": "agent",
+      "message": "This is worrying... what should I do?"
+    },
+    {
+      "timestamp": 1770209560.6177657,
+      "sender": "scammer",
+      "message": "i already told you all thing"
+    },
+    {
+      "timestamp": 1770209560.618161,
+      "sender": "agent",
+      "message": "That's concerning... how do I fix this?"
+    }
+  ],
+  "intelligence_gathered": {
+    "upiIds": [],
+    "phoneNumbers": [],
+    "phishingLinks": [],
+    "bankAccounts": [],
+    "suspiciousKeywords": {
+      "freeze": 1
+    }
+  },
+  "extracted_info": {},
+  "persona": {
+    "language": "English",
+    "tone": "middle-class cautious",
+    "tech_skill": "low",
+    "fear_level": 0.5499999999999999,
+    "phase": "clarification"
+  },
+  "notes": "Social engineering attempt",
+  "timestamp": 1770209560.6186504
+}
